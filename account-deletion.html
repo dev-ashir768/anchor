@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Deletion - Anchor Heart</title>
+    <meta
+      name="description"
+      content="Request account and data deletion from Anchor Heart"
+    />
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-[#0a0a0a] text-white overflow-x-hidden">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0">
+      <div class="gradient-bg"></div>
+      <div class="stars"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3" data-aos="fade-right">
+            <a href="index.html" class="flex items-center space-x-3">
+              <div class="relative group cursor-pointer">
+                <img
+                  src="logo.jpeg"
+                  class="size-14 rounded-full object-cover"
+                  alt="Anchor Heart Logo"
+                />
+              </div>
+              <div>
+                <h1
+                  class="text-2xl font-bold bg-gradient-to-r from-[#FFF59D] via-[#E53935] to-[#FFF59D] bg-clip-text text-transparent"
+                >
+                  Anchor Heart
+                </h1>
+                <p class="text-xs text-gray-400">Find Your Anchor</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Back to Home Button -->
+          <div class="flex items-center space-x-4" data-aos="fade-left">
+            <a
+              href="index.html"
+              class="hidden md:block px-6 py-3 bg-gradient-to-r from-[#FFF59D] via-[#E53935] to-[#FFF59D] rounded-full font-semibold text-black hover:shadow-lg hover:shadow-[#E53935]/50 transition-all hover:scale-105"
+            >
+              Back to Home
+            </a>
+            <a href="index.html" class="md:hidden text-white">
+              <svg
+                class="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section
+      class="relative min-h-screen flex items-center justify-center pt-32 pb-20"
+    >
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Page Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="inline-block px-4 py-2 bg-[#E53935]/20 border border-[#E53935]/30 rounded-full text-sm font-medium text-[#FFF59D] mb-6"
+          >
+            Data Privacy
+          </span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
+            <span
+              class="bg-gradient-to-r from-[#FFF59D] via-[#E53935] to-[#FFF59D] bg-clip-text text-transparent"
+            >
+              Account & Data Deletion
+            </span>
+          </h1>
+        </div>
+
+        <!-- Main Card -->
+        <div
+          class="glass-card p-8 md:p-12 lg:p-16 rounded-3xl"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#FFF59D]/10 to-[#E53935]/10 rounded-3xl pointer-events-none"
+          ></div>
+
+          <div class="relative z-10">
+            <!-- Icon -->
+            <div class="flex justify-center mb-8">
+              <div
+                class="w-20 h-20 bg-gradient-to-br from-[#FFF59D] to-[#E53935] rounded-2xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-10 h-10 text-black"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="text-center space-y-6">
+              <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+                If you want to delete your account and all associated data from
+                <span
+                  class="font-semibold bg-gradient-to-r from-[#FFF59D] to-[#E53935] bg-clip-text text-transparent"
+                  >AnchorWorld</span
+                >, please email us at:
+              </p>
+
+              <!-- Email Contact Card -->
+              <div
+                class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 my-8"
+              >
+                <div class="space-y-4">
+                  <div>
+                    <p class="text-sm text-gray-400 mb-2">Email Address:</p>
+                    <a
+                      href="mailto:support@anchorworld.org?subject=Account%20Deletion%20Request"
+                      class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#FFF59D] to-[#E53935] bg-clip-text text-transparent hover:scale-105 transition-transform inline-block"
+                    >
+                      support@anchorworld.org
+                    </a>
+                  </div>
+
+                  <div class="pt-4 border-t border-white/10">
+                    <p class="text-sm text-gray-400 mb-2">Email Subject:</p>
+                    <p class="text-lg font-semibold text-white">
+                      Account Deletion Request
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA Button -->
+              <a
+                href="mailto:support@anchorworld.org?subject=Account%20Deletion%20Request"
+                class="inline-block px-8 py-4 bg-gradient-to-r from-[#FFF59D] via-[#E53935] to-[#FFF59D] rounded-full font-bold text-lg hover:scale-105 transition-transform text-black"
+              >
+                Send Deletion Request
+              </a>
+
+              <!-- Timeline Info -->
+              <div class="mt-12 pt-8 border-t border-white/10">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                  <svg
+                    class="w-6 h-6 text-[#FFF59D]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <p class="text-lg font-semibold text-white">
+                    Processing Time
+                  </p>
+                </div>
+                <p class="text-gray-300">
+                  Your account and all related data will be
+                  <span class="text-[#E53935] font-semibold"
+                    >permanently deleted</span
+                  >
+                  within
+                  <span class="text-[#FFF59D] font-semibold"
+                    >7 working days</span
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <div
+            class="glass-card p-6 rounded-2xl text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-[#FFF59D] to-[#E53935] rounded-xl flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-black"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Complete Deletion</h3>
+            <p class="text-sm text-gray-400">
+              All your data will be permanently removed from our servers
+            </p>
+          </div>
+
+          <div
+            class="glass-card p-6 rounded-2xl text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-[#E53935] to-[#FFF59D] rounded-xl flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-black"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Secure Process</h3>
+            <p class="text-sm text-gray-400">
+              Your deletion request is handled with utmost security
+            </p>
+          </div>
+
+          <div
+            class="glass-card p-6 rounded-2xl text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-[#FFF59D] to-[#E53935] rounded-xl flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-black"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Email Confirmation</h3>
+            <p class="text-sm text-gray-400">
+              You'll receive confirmation once deletion is complete
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative py-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <!-- Logo -->
+        <div class="flex items-center justify-center gap-3 mb-8">
+          <div
+            class="w-10 h-10 bg-gradient-to-br from-[#FFF59D] to-[#E53935] rounded-xl flex items-center justify-center"
+          >
+            <img
+              src="logo.jpeg"
+              class="w-8 h-8 rounded-full object-cover"
+              alt="Anchor Heart Logo"
+            />
+          </div>
+          <h3 class="text-xl font-bold">Anchor Heart</h3>
+        </div>
+
+        <!-- Links -->
+        <div class="mb-8 flex flex-wrap justify-center gap-6">
+          <a
+            href="index.html"
+            class="text-gray-400 hover:text-white transition text-sm"
+            >Home</a
+          >
+          <a
+            href="privacy-policy.html"
+            class="text-gray-400 hover:text-white transition text-sm"
+            >Privacy Policy</a
+          >
+          <a
+            href="account-deletion.html"
+            class="text-gray-400 hover:text-white transition text-sm"
+            >Account Deletion</a
+          >
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-gray-500 text-xs">
+          <p>© 2025 Anchor. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              primary: {
+                DEFAULT: "#500E10",
+                50: "#fdf2f2",
+                100: "#fde8e8",
+                200: "#fbd5d5",
+                300: "#f8b4b4",
+                400: "#f98080",
+                500: "#f05252",
+                600: "#e02424",
+                700: "#c81e1e",
+                800: "#500E10",
+                900: "#771D1D",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>
